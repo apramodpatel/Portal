@@ -29,21 +29,20 @@ WebElement wait;
 	public void open_a_Browser_with_URL() throws Throwable {
 		//Chrome
 		if(Browser.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver","C:\\Users\\ppatel13\\Software\\Selenium Drivers\\chromedriver_win32\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","C:\\Users\\ppatel13\\Softwares\\Selenium Drivers\\chromedriver.exe");
 			driver=new ChromeDriver(); //OpenBrowser
 			
-			driver = new Firefoxdriver();
 			
 		 	
 		//firefox	
 		}else if (Browser.equalsIgnoreCase("firefox")){ 
-			System.setProperty("webdriver.firefox.marionette","C:\\Users\\ppatel13\\Software\\Selenium Drivers\\geckodriver-v0.22.0-win64\\geckodriver.exe");
+			System.setProperty("webdriver.firefox.marionette","C:\\Users\\ppatel13\\Softwares\\Selenium Drivers\\geckodriver.exe");
 			driver=new FirefoxDriver();
 			
 			
 		//IE	
 		}else if(Browser.equalsIgnoreCase("ie")){
-			System.setProperty("webdriver.firefox.marionette","C:\\Users\\ppatel13\\Software\\Selenium Drivers\\IEDriverServer_x64_3.14.0\\IEDriverServer.exe");
+			System.setProperty("webdriver.firefox.marionette","C:\\Users\\ppatel13\\Softwares\\Selenium Drivers\\IEDriverServer.exe");
 			driver=new InternetExplorerDriver();
 		}
 		FileInputStream fip = new FileInputStream(".\\GlobalVariables.properties");
