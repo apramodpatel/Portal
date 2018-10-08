@@ -32,6 +32,8 @@ WebElement wait;
 			System.setProperty("webdriver.chrome.driver","C:\\Users\\ppatel13\\Software\\Selenium Drivers\\chromedriver_win32\\chromedriver.exe");
 			driver=new ChromeDriver(); //OpenBrowser
 			
+			driver = new Firefoxdriver();
+			
 		 	
 		//firefox	
 		}else if (Browser.equalsIgnoreCase("firefox")){ 
